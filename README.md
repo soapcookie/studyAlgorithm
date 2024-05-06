@@ -27,7 +27,7 @@
 
 ## 👨‍👨‍👦‍👦 참여 인원
 ### 스터디장
-+ 김지현 ([eter2](https://github.com/jihy20n))
++ 김지현 ([jihy30n](https://github.com/jihy30n))
 ### 스터디원
 + 김수아 ([soapcookie](https://github.com/soapcookie))
 + 김성훈 ([Teddysir](https://github.com/Teddysir))
