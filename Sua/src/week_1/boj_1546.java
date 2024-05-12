@@ -1,25 +1,44 @@
 package week_1;
 
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.*;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int A[] = new int[N];
+    public static void main(String[] args) throws IOException {
+//        Scanner in = new Scanner(System.in);
+//
+//        double arr[] = new double[in.nextInt()];
+//
+//        for(int i = 0; i < arr.length; i++) {
+//            arr[i] = in.nextDouble();
+//        }
+//        in.close();
+//
+//        double sum = 0;
+//        Arrays.sort(arr);
+//
+//        for(int i = 0; i < arr.length; i++) {
+//            sum += ((arr[i] / arr[arr.length-1]) * 100);
+//        }
+//        System.out.print(sum / arr.length);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        for(int i = 0; i<N; i++){
-            A[i] = sc.nextInt();
+        double arr[] = new double[Integer.parseInt(br.readLine())];
+
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = Double.parseDouble(st.nextToken());
         }
 
-        long sum=0;
-        long max = 0;
+        double sum = 0;
+        Arrays.sort(arr);
 
-        for(int i=0; i<N; i++){4
-            if(max<A[i]) max = A[i];
-            sum+=A[i];
+        for(int i = 0; i < arr.length; i++) {
+            sum += ((arr[i] / arr[arr.length - 1]) * 100);
         }
-        System.out.println(sum*100.0/max/N);
+        System.out.print(sum / arr.length);
     }}
 
 
