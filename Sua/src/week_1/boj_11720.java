@@ -1,7 +1,7 @@
-
+package week_1;
 import java.util.*;
 import java.io.*;
-public class Main {
+public class boj_11720 {
     public static void main(String[] args) throws IOException {
 //        Scanner sc = new Scanner(System.in);
 //
