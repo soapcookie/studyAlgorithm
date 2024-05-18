@@ -1,0 +1,2 @@
+before = str(input())
+
